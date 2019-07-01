@@ -1,0 +1,13 @@
+html,body{
+  min-height:100%;
+  min-width:100%;
+  padding:20px;
+}
+@font-face{
+  font-family: 'Didot-Bold';
+  src: url('../Didot-Bold.ttf');
+}
+
+h1, h2{
+  font-family: 'Didot-Bold', sans-serif;
+}

@@ -1,0 +1,62 @@
+.video-foreground, .video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+html,body{
+  background-color: black;
+}
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground {
+	  height: 300%;
+	  top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground {
+	  width: 300%;
+	  left: -100%;
+  }
+}
+
+
+.knockout-text {
+	position: absolute;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+  font-size: calc(60px + 13vw + 2.5vh);
+	font-weight: 900;
+	letter-spacing: 0.15em;
+  margin: auto;
+	text-transform: uppercase;
+	user-select: none;
+  -webkit-text-stroke-color: white;
+	-webkit-text-stroke-width: 0.015em;
+  background-color: black;
+  color: #fff;
+  mix-blend-mode: multiply;
+  font-family: 'Didot-Bold', sans-serif;
+}
+
+#test{
+  visibility:hidden;
+  animation: cssAnimation 0s 3s forwards;
+
+
+}
+
+
+@keyframes cssAnimation{
+  to {
+    visibility: visible;
+  }
+
+}
