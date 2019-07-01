@@ -47,13 +47,21 @@ html,body{
 }
 
 #test{
-  visibility:hidden;
-  animation: cssAnimation 0s 3s forwards;
+  /* visibility:hidden; */
+  /* animation: cssAnimation 0s 2.5s forwards; */
 
-
+}
+#test2 {
+  animation: test 7s 1s linear;
 }
 
 
+@keyframes test{
+  to{
+    margin-right:200px;
+  }
+
+}
 @keyframes cssAnimation{
   to {
     visibility: visible;
